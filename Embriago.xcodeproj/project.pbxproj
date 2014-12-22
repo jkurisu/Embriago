@@ -14,6 +14,8 @@
 		3192B5BA1A48697A00F25F2C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3192B5B91A48697A00F25F2C /* Images.xcassets */; };
 		3192B5BD1A48697A00F25F2C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3192B5BB1A48697A00F25F2C /* LaunchScreen.xib */; };
 		3192B5C91A48697A00F25F2C /* EmbriagoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3192B5C81A48697A00F25F2C /* EmbriagoTests.swift */; };
+		79EE5784F172A1AA63D275BB /* libPods-Embriago.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6DBE0B98643657635B3709 /* libPods-Embriago.a */; };
+		F1E88A98DEE39DCC2C69CEE9 /* libPods-EmbriagoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 110F1A7BBD1EE218BB79C48E /* libPods-EmbriagoTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		110F1A7BBD1EE218BB79C48E /* libPods-EmbriagoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmbriagoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E08710C91DF3D00D3E3690E /* Pods-EmbriagoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmbriagoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EmbriagoTests/Pods-EmbriagoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1F5FF91CB088C30DB6140C7E /* Pods-Embriago.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Embriago.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Embriago/Pods-Embriago.debug.xcconfig"; sourceTree = "<group>"; };
 		3192B5AA1A48697A00F25F2C /* Embriago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Embriago.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3192B5AE1A48697A00F25F2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3192B5AF1A48697A00F25F2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +43,12 @@
 		3192B5C21A48697A00F25F2C /* EmbriagoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmbriagoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3192B5C71A48697A00F25F2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3192B5C81A48697A00F25F2C /* EmbriagoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbriagoTests.swift; sourceTree = "<group>"; };
+		31BC4A131A4895950090092B /* Embriago-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Embriago-Bridging-Header.h"; sourceTree = "<group>"; };
+		31BC4A161A489F960090092B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		31BC4A181A489F9E0090092B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4983FB98B7D07DF816BC8404 /* Pods-EmbriagoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmbriagoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmbriagoTests/Pods-EmbriagoTests.release.xcconfig"; sourceTree = "<group>"; };
+		8032323CFCC7244ACE85159B /* Pods-Embriago.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Embriago.release.xcconfig"; path = "Pods/Target Support Files/Pods-Embriago/Pods-Embriago.release.xcconfig"; sourceTree = "<group>"; };
+		AB6DBE0B98643657635B3709 /* libPods-Embriago.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Embriago.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79EE5784F172A1AA63D275BB /* libPods-Embriago.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E88A98DEE39DCC2C69CEE9 /* libPods-EmbriagoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +77,8 @@
 				3192B5AC1A48697A00F25F2C /* Embriago */,
 				3192B5C51A48697A00F25F2C /* EmbriagoTests */,
 				3192B5AB1A48697A00F25F2C /* Products */,
+				63905D6635811EC3A9E3C17A /* Pods */,
+				6DEB1BFAB5FFC0FC8594C83C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +101,7 @@
 				3192B5BB1A48697A00F25F2C /* LaunchScreen.xib */,
 				3192B5B11A48697A00F25F2C /* Embriago.xcdatamodeld */,
 				3192B5AD1A48697A00F25F2C /* Supporting Files */,
+				31BC4A131A4895950090092B /* Embriago-Bridging-Header.h */,
 			);
 			path = Embriago;
 			sourceTree = "<group>";
@@ -115,6 +131,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		63905D6635811EC3A9E3C17A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F5FF91CB088C30DB6140C7E /* Pods-Embriago.debug.xcconfig */,
+				8032323CFCC7244ACE85159B /* Pods-Embriago.release.xcconfig */,
+				1E08710C91DF3D00D3E3690E /* Pods-EmbriagoTests.debug.xcconfig */,
+				4983FB98B7D07DF816BC8404 /* Pods-EmbriagoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6DEB1BFAB5FFC0FC8594C83C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31BC4A181A489F9E0090092B /* CFNetwork.framework */,
+				31BC4A161A489F960090092B /* AudioToolbox.framework */,
+				AB6DBE0B98643657635B3709 /* libPods-Embriago.a */,
+				110F1A7BBD1EE218BB79C48E /* libPods-EmbriagoTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3192B5CC1A48697A00F25F2C /* Build configuration list for PBXNativeTarget "Embriago" */;
 			buildPhases = (
+				C7807758DB71AC79443A2540 /* Check Pods Manifest.lock */,
 				3192B5A61A48697A00F25F2C /* Sources */,
 				3192B5A71A48697A00F25F2C /* Frameworks */,
 				3192B5A81A48697A00F25F2C /* Resources */,
+				15632D8B571D04A32F014F6B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3192B5CF1A48697A00F25F2C /* Build configuration list for PBXNativeTarget "EmbriagoTests" */;
 			buildPhases = (
+				954489988A06E2B065CDA173 /* Check Pods Manifest.lock */,
 				3192B5BE1A48697A00F25F2C /* Sources */,
 				3192B5BF1A48697A00F25F2C /* Frameworks */,
 				3192B5C01A48697A00F25F2C /* Resources */,
+				82F8442B2DA9A5F44FCC0DA7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,6 +251,69 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15632D8B571D04A32F014F6B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Embriago/Pods-Embriago-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82F8442B2DA9A5F44FCC0DA7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmbriagoTests/Pods-EmbriagoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		954489988A06E2B065CDA173 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C7807758DB71AC79443A2540 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3192B5A61A48697A00F25F2C /* Sources */ = {
@@ -340,26 +445,34 @@
 		};
 		3192B5CD1A48697A00F25F2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F5FF91CB088C30DB6140C7E /* Pods-Embriago.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Embriago/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Embriago/Embriago-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		3192B5CE1A48697A00F25F2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8032323CFCC7244ACE85159B /* Pods-Embriago.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Embriago/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Embriago/Embriago-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		3192B5D01A48697A00F25F2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E08710C91DF3D00D3E3690E /* Pods-EmbriagoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -379,6 +492,7 @@
 		};
 		3192B5D11A48697A00F25F2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4983FB98B7D07DF816BC8404 /* Pods-EmbriagoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -411,6 +525,7 @@
 				3192B5CE1A48697A00F25F2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3192B5CF1A48697A00F25F2C /* Build configuration list for PBXNativeTarget "EmbriagoTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +534,7 @@
 				3192B5D11A48697A00F25F2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -12,12 +12,24 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+//        var testObject = PFObject(className: "TestObject")
+//        testObject["Name"] = "TestObject Name"
+//        testObject["Version"] = 1.1
+//        testObject.saveInBackgroundWithBlock({
+//            (succeeded, error) -> Void in
+//            if(succeeded) {
+//                println("TestObject saved")
+//            } else {
+//                println(error)
+//            }
+//        })
+        var loginView = FBLoginView()
+        loginView.center = self.view.center
+        self.view.addSubview(loginView)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 

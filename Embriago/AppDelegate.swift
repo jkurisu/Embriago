@@ -9,6 +9,10 @@
 import UIKit
 import CoreData
 
+
+//Application ID q3CNrLisktYuwEq4Tqv6fp7ghl7LTrx3xZD5EuDa
+//Client Key cK3WXUP7zcbG0fgaZSPyjpCsNYm7gBNtNXrOevCV
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -17,9 +21,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        Parse.enableLocalDatastore()
+        Parse.setApplicationId("q3CNrLisktYuwEq4Tqv6fp7ghl7LTrx3xZD5EuDa", clientKey: "cK3WXUP7zcbG0fgaZSPyjpCsNYm7gBNtNXrOevCV")
+        
+//        http://stackoverflow.com/questions/26503914/why-does-my-pfanalytics-not-have-trackappopenewithlaunchoptions-function-ios-s
+//        Added #import <Bolts/Bolts.h> to Embriago-Bridging-Header.h
+//        PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: { (succeeded, error) -> Void in
+//            if error == nil {
+//                println("Succeeded: \(succeeded)")
+//            } else {
+//                println(error)
+//            }
+//        })
+        
+        PFFacebookUtils.initializeFacebook()
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         return true
     }
 
+    
+//    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+//        return FBAppCall.handleOpenURL(url, sourceApplication: sourceApplication)
+//    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+        return FBAppCall.handleOpenURL(url, sourceApplication: sourceApplication, withSession:PFFacebookUtils.session())
+    }
+    
+    func applicationDidBecomeActive(application: UIApplication) {
+        FBAppEvents.activateApp()
+        FBAppCall.handleDidBecomeActiveWithSession(PFFacebookUtils.session())
+    }
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
@@ -34,9 +67,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
     }
 
-    func applicationDidBecomeActive(application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
+//    func applicationDidBecomeActive(application: UIApplication) {
+//        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+//        
+//        FBAppEvents.activateApp()
+//    }
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
