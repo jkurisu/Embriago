@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3192B5B01A48697A00F25F2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3192B5AF1A48697A00F25F2C /* AppDelegate.swift */; };
+		3192B5B31A48697A00F25F2C /* Embriago.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3192B5B11A48697A00F25F2C /* Embriago.xcdatamodeld */; };
+		3192B5B51A48697A00F25F2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3192B5B41A48697A00F25F2C /* ViewController.swift */; };
+		3192B5B81A48697A00F25F2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3192B5B61A48697A00F25F2C /* Main.storyboard */; };
+		3192B5BA1A48697A00F25F2C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3192B5B91A48697A00F25F2C /* Images.xcassets */; };
+		3192B5BD1A48697A00F25F2C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3192B5BB1A48697A00F25F2C /* LaunchScreen.xib */; };
+		3192B5C91A48697A00F25F2C /* EmbriagoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3192B5C81A48697A00F25F2C /* EmbriagoTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3192B5C31A48697A00F25F2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3192B5A21A48697A00F25F2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3192B5A91A48697A00F25F2C;
+			remoteInfo = Embriago;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3192B5AA1A48697A00F25F2C /* Embriago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Embriago.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3192B5AE1A48697A00F25F2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3192B5AF1A48697A00F25F2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3192B5B21A48697A00F25F2C /* Embriago.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Embriago.xcdatamodel; sourceTree = "<group>"; };
+		3192B5B41A48697A00F25F2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3192B5B71A48697A00F25F2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3192B5B91A48697A00F25F2C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3192B5BC1A48697A00F25F2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3192B5C21A48697A00F25F2C /* EmbriagoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmbriagoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3192B5C71A48697A00F25F2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3192B5C81A48697A00F25F2C /* EmbriagoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbriagoTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3192B5A71A48697A00F25F2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3192B5BF1A48697A00F25F2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3192B5A11A48697A00F25F2C = {
+			isa = PBXGroup;
+			children = (
+				3192B5AC1A48697A00F25F2C /* Embriago */,
+				3192B5C51A48697A00F25F2C /* EmbriagoTests */,
+				3192B5AB1A48697A00F25F2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3192B5AB1A48697A00F25F2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3192B5AA1A48697A00F25F2C /* Embriago.app */,
+				3192B5C21A48697A00F25F2C /* EmbriagoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3192B5AC1A48697A00F25F2C /* Embriago */ = {
+			isa = PBXGroup;
+			children = (
+				3192B5AF1A48697A00F25F2C /* AppDelegate.swift */,
+				3192B5B41A48697A00F25F2C /* ViewController.swift */,
+				3192B5B61A48697A00F25F2C /* Main.storyboard */,
+				3192B5B91A48697A00F25F2C /* Images.xcassets */,
+				3192B5BB1A48697A00F25F2C /* LaunchScreen.xib */,
+				3192B5B11A48697A00F25F2C /* Embriago.xcdatamodeld */,
+				3192B5AD1A48697A00F25F2C /* Supporting Files */,
+			);
+			path = Embriago;
+			sourceTree = "<group>";
+		};
+		3192B5AD1A48697A00F25F2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3192B5AE1A48697A00F25F2C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3192B5C51A48697A00F25F2C /* EmbriagoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3192B5C81A48697A00F25F2C /* EmbriagoTests.swift */,
+				3192B5C61A48697A00F25F2C /* Supporting Files */,
+			);
+			path = EmbriagoTests;
+			sourceTree = "<group>";
+		};
+		3192B5C61A48697A00F25F2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3192B5C71A48697A00F25F2C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3192B5A91A48697A00F25F2C /* Embriago */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3192B5CC1A48697A00F25F2C /* Build configuration list for PBXNativeTarget "Embriago" */;
+			buildPhases = (
+				3192B5A61A48697A00F25F2C /* Sources */,
+				3192B5A71A48697A00F25F2C /* Frameworks */,
+				3192B5A81A48697A00F25F2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Embriago;
+			productName = Embriago;
+			productReference = 3192B5AA1A48697A00F25F2C /* Embriago.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3192B5C11A48697A00F25F2C /* EmbriagoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3192B5CF1A48697A00F25F2C /* Build configuration list for PBXNativeTarget "EmbriagoTests" */;
+			buildPhases = (
+				3192B5BE1A48697A00F25F2C /* Sources */,
+				3192B5BF1A48697A00F25F2C /* Frameworks */,
+				3192B5C01A48697A00F25F2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3192B5C41A48697A00F25F2C /* PBXTargetDependency */,
+			);
+			name = EmbriagoTests;
+			productName = EmbriagoTests;
+			productReference = 3192B5C21A48697A00F25F2C /* EmbriagoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3192B5A21A48697A00F25F2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "AOTO Systems, Inc.";
+				TargetAttributes = {
+					3192B5A91A48697A00F25F2C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					3192B5C11A48697A00F25F2C = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 3192B5A91A48697A00F25F2C;
+					};
+				};
+			};
+			buildConfigurationList = 3192B5A51A48697A00F25F2C /* Build configuration list for PBXProject "Embriago" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3192B5A11A48697A00F25F2C;
+			productRefGroup = 3192B5AB1A48697A00F25F2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3192B5A91A48697A00F25F2C /* Embriago */,
+				3192B5C11A48697A00F25F2C /* EmbriagoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3192B5A81A48697A00F25F2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3192B5B81A48697A00F25F2C /* Main.storyboard in Resources */,
+				3192B5BD1A48697A00F25F2C /* LaunchScreen.xib in Resources */,
+				3192B5BA1A48697A00F25F2C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3192B5C01A48697A00F25F2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3192B5A61A48697A00F25F2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3192B5B51A48697A00F25F2C /* ViewController.swift in Sources */,
+				3192B5B01A48697A00F25F2C /* AppDelegate.swift in Sources */,
+				3192B5B31A48697A00F25F2C /* Embriago.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3192B5BE1A48697A00F25F2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3192B5C91A48697A00F25F2C /* EmbriagoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3192B5C41A48697A00F25F2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3192B5A91A48697A00F25F2C /* Embriago */;
+			targetProxy = 3192B5C31A48697A00F25F2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3192B5B61A48697A00F25F2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3192B5B71A48697A00F25F2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3192B5BB1A48697A00F25F2C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3192B5BC1A48697A00F25F2C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3192B5CA1A48697A00F25F2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3192B5CB1A48697A00F25F2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3192B5CD1A48697A00F25F2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Embriago/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3192B5CE1A48697A00F25F2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Embriago/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3192B5D01A48697A00F25F2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EmbriagoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Embriago.app/Embriago";
+			};
+			name = Debug;
+		};
+		3192B5D11A48697A00F25F2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EmbriagoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Embriago.app/Embriago";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3192B5A51A48697A00F25F2C /* Build configuration list for PBXProject "Embriago" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3192B5CA1A48697A00F25F2C /* Debug */,
+				3192B5CB1A48697A00F25F2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3192B5CC1A48697A00F25F2C /* Build configuration list for PBXNativeTarget "Embriago" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3192B5CD1A48697A00F25F2C /* Debug */,
+				3192B5CE1A48697A00F25F2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3192B5CF1A48697A00F25F2C /* Build configuration list for PBXNativeTarget "EmbriagoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3192B5D01A48697A00F25F2C /* Debug */,
+				3192B5D11A48697A00F25F2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3192B5B11A48697A00F25F2C /* Embriago.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3192B5B21A48697A00F25F2C /* Embriago.xcdatamodel */,
+			);
+			currentVersion = 3192B5B21A48697A00F25F2C /* Embriago.xcdatamodel */;
+			path = Embriago.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3192B5A21A48697A00F25F2C /* Project object */;
+}
