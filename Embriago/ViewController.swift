@@ -42,6 +42,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        println(PFUser.currentUser())
 //        var testObject = PFObject(className: "TestObject")
 //        testObject["Name"] = "TestObject Name"
 //        testObject["Version"] = 1.1
@@ -59,6 +60,14 @@ class ViewController: UIViewController {
         
         bind()
         
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        if PFUser.currentUser() != nil {
+            performSegueWithIdentifier("goHome", sender: self)
+//            let homeViewController = HomeViewController(nibName: nil, bundle: nil)
+//            self.navigationController?.pushViewController(homeViewController, animated: animated)
+        }
     }
     
         func bind() {

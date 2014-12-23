@@ -21,6 +21,7 @@
 		31BC4B241A49C31E0090092B /* RACSignal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BC4B211A49C31E0090092B /* RACSignal+Extensions.swift */; };
 		31BC4B251A49C31E0090092B /* RAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BC4B221A49C31E0090092B /* RAC.swift */; };
 		31BC4B261A49C31E0090092B /* RACObserve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BC4B231A49C31E0090092B /* RACObserve.swift */; };
+		31BC4B741A4A1A640090092B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BC4B731A4A1A640090092B /* HomeViewController.swift */; };
 		79EE5784F172A1AA63D275BB /* libPods-Embriago.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6DBE0B98643657635B3709 /* libPods-Embriago.a */; };
 		F1E88A98DEE39DCC2C69CEE9 /* libPods-EmbriagoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 110F1A7BBD1EE218BB79C48E /* libPods-EmbriagoTests.a */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,7 @@
 		31BC4B211A49C31E0090092B /* RACSignal+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RACSignal+Extensions.swift"; sourceTree = "<group>"; };
 		31BC4B221A49C31E0090092B /* RAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAC.swift; sourceTree = "<group>"; };
 		31BC4B231A49C31E0090092B /* RACObserve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACObserve.swift; sourceTree = "<group>"; };
+		31BC4B731A4A1A640090092B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4983FB98B7D07DF816BC8404 /* Pods-EmbriagoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmbriagoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmbriagoTests/Pods-EmbriagoTests.release.xcconfig"; sourceTree = "<group>"; };
 		8032323CFCC7244ACE85159B /* Pods-Embriago.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Embriago.release.xcconfig"; path = "Pods/Target Support Files/Pods-Embriago/Pods-Embriago.release.xcconfig"; sourceTree = "<group>"; };
 		AB6DBE0B98643657635B3709 /* libPods-Embriago.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Embriago.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +166,7 @@
 			children = (
 				3192B5B41A48697A00F25F2C /* ViewController.swift */,
 				31BC4A1A1A48E6E90090092B /* LoginViewController.swift */,
+				31BC4B731A4A1A640090092B /* HomeViewController.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				31BC4B241A49C31E0090092B /* RACSignal+Extensions.swift in Sources */,
 				31BC4B261A49C31E0090092B /* RACObserve.swift in Sources */,
 				3192B5B51A48697A00F25F2C /* ViewController.swift in Sources */,
+				31BC4B741A4A1A640090092B /* HomeViewController.swift in Sources */,
 				31BC4B251A49C31E0090092B /* RAC.swift in Sources */,
 				3192B5B01A48697A00F25F2C /* AppDelegate.swift in Sources */,
 				3192B5B31A48697A00F25F2C /* Embriago.xcdatamodeld in Sources */,

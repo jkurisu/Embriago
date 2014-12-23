@@ -121,7 +121,7 @@
         <!--HomeViewController-->
         <scene sceneID="feM-sX-Asn">
             <objects>
-                <viewController title="HomeViewController" id="2Tf-x5-nsP" sceneMemberID="viewController">
+                <viewController title="HomeViewController" id="2Tf-x5-nsP" customClass="HomeViewController" customModule="Embriago" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HaT-4c-T8j"/>
                         <viewControllerLayoutGuide type="bottom" id="gZy-zs-bwx"/>
@@ -136,9 +136,21 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9j-6P-MLV">
+                                <rect key="frame" x="243" y="107" width="49" height="30"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logout:" destination="2Tf-x5-nsP" eventType="touchUpInside" id="8TB-3p-Gef"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="Y7k-Au-oxf" kind="show" identifier="gotoLogin" id="aP4-ya-0Jc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eNb-EX-ib2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -248,5 +260,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="yc2-8h-Ss1"/>
+        <segue reference="aP4-ya-0Jc"/>
     </inferredMetricsTieBreakers>
 </document>

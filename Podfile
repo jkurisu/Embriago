@@ -9,6 +9,7 @@ target "Embriago" do
   pod 'MagicalRecord'
   pod 'Parse'
   pod 'ParseFacebookUtils'
+  pod 'ParseUI'
   pod 'NSLogger'
 #  pod 'SCLAlertView'
   pod 'SCLAlertView-Objective-C'
