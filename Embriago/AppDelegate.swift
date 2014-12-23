@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         Parse.enableLocalDatastore()
+        
         Parse.setApplicationId("q3CNrLisktYuwEq4Tqv6fp7ghl7LTrx3xZD5EuDa", clientKey: "cK3WXUP7zcbG0fgaZSPyjpCsNYm7gBNtNXrOevCV")
         
 //        http://stackoverflow.com/questions/26503914/why-does-my-pfanalytics-not-have-trackappopenewithlaunchoptions-function-ios-s
@@ -76,6 +77,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
+        PFFacebookUtils.session().close()
         self.saveContext()
     }
 

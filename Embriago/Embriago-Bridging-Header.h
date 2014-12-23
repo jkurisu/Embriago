@@ -6,3 +6,7 @@
 
 #import <FacebookSDK/FacebookSDK.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
+
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
+#import <SCLAlertView-Objective-C/SCLAlertView.h>
