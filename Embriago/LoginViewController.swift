@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, FBLoginViewDelegate {
     
     @IBOutlet weak var emailAddressTextField: UITextField!
     
@@ -16,6 +16,9 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var loginUserButton: UIButton!
     
+    @IBOutlet weak var loginView: FBLoginView!
+    
+    @IBOutlet weak var messagesLabel: UILabel!
     
     @IBAction func segueToRegister(sender: AnyObject) {
         performSegueWithIdentifier("registerSegue", sender: self)
@@ -27,6 +30,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginView.delegate = self
         bind()
     }
     
@@ -35,18 +39,51 @@ class LoginViewController: UIViewController {
     }
     
     private func bind() {
+        
+        
         let loginUserSignal = loginUserButton.rac_signalForControlEvents(UIControlEvents.TouchUpInside)
         loginUserSignal.subscribeNext {
             (value: AnyObject!) -> Void in
             self.login(self.emailAddressTextField.text, password: self.passwordTextField.text)
+//            self.login()
         }
     }
+    
+//    private func login() {
+//        var permissions = ["public_profile"]
+//        PFFacebookUtils.logInWithPermissions(permissions, block: {
+//            (user: PFUser!, error: NSError!) -> Void in
+//            if user == nil {
+//                println("error")
+//            } else {
+//                println("OK")
+//                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//                let homeViewController = storyboard.instantiateViewControllerWithIdentifier("HomeViewController") as UIViewController
+//                self.presentViewController(homeViewController, animated: true, completion: nil)
+//            }
+//        })
+//    }
     
     private func login(emailAddress: String, password: String) {
         PFUser.logInWithUsernameInBackground(emailAddress, password: password) {
             (user: PFUser!, error: NSError!) -> Void in
             if user != nil {
-                self.performSegueWithIdentifier("goHome", sender: self)
+                println("Is linked: \(PFFacebookUtils.isLinkedWithUser(user))")
+                if !PFFacebookUtils.isLinkedWithUser(user) {
+                    PFFacebookUtils.linkUser(user, permissions: ["public_profile", "email", "user_friends"], {
+                        (succeeded: Bool!, error: NSError!) -> Void in
+                        println(succeeded)
+                        if succeeded == true {
+                            println("Link Successful")
+                        } else {
+                            println(error)
+                        }
+                    })
+                }
+                
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let homeViewController = storyboard.instantiateViewControllerWithIdentifier("HomeViewController") as UIViewController
+                self.presentViewController(homeViewController, animated: true, completion: nil)
             } else {
                 var alertView = SCLAlertView();
                 alertView.alertIsDismissed({ () -> Void in
@@ -60,7 +97,33 @@ class LoginViewController: UIViewController {
                 }
             }
         }
+        
+
     }
-
-
+    
+    func loginView(loginView: FBLoginView!, handleError error: NSError!) {
+        println(error)
+    }
+    
+    func loginViewFetchedUserInfo(loginView: FBLoginView!, user: FBGraphUser!) {
+        println(user)
+//        var facebookUser = PFUser()
+//        facebookUser.setObject(user.name, forKey: "displayName")
+//        if PFUser.currentUser() == nil {
+//            var facebookUser = PFUser()
+//            facebookUser.setObject(user.name, forKey: "displayName")
+//            PFFacebookUtils.linkUser(facebookUser, facebookId: <#String!#>, accessToken: <#String!#>, expirationDate: <#NSDate!#>, block: <#PFBooleanResultBlock!##(Bool, NSError!) -> Void#>)
+//        }
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let homeViewController = storyboard.instantiateViewControllerWithIdentifier("HomeViewController") as UIViewController
+//        self.presentViewController(homeViewController, animated: true, completion: nil)
+    }
+    
+    func loginViewShowingLoggedInUser(loginView: FBLoginView!) {
+        println("loginViewShowingLoggedInUser")
+    }
+    
+    func loginViewShowingLoggedOutUser(loginView: FBLoginView!) {
+        println("loginViewShowingLoggedOutUser")
+    }
 }

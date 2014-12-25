@@ -22,6 +22,13 @@
 		31BC4B251A49C31E0090092B /* RAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BC4B221A49C31E0090092B /* RAC.swift */; };
 		31BC4B261A49C31E0090092B /* RACObserve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BC4B231A49C31E0090092B /* RACObserve.swift */; };
 		31BC4B741A4A1A640090092B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BC4B731A4A1A640090092B /* HomeViewController.swift */; };
+		31BC4B761A4AF1870090092B /* EmbriagoLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BC4B751A4AF1870090092B /* EmbriagoLoginViewController.swift */; };
+		31BC4B781A4AF1B10090092B /* EmbriagoSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BC4B771A4AF1B10090092B /* EmbriagoSignUpViewController.swift */; };
+		31BC4B7A1A4AF4AD0090092B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BC4B791A4AF4AD0090092B /* MainViewController.swift */; };
+		31BC4B801A4B117F0090092B /* FBLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = 31BC4B7C1A4B117F0090092B /* FBLogin.png */; };
+		31BC4B811A4B117F0090092B /* FBLogin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31BC4B7D1A4B117F0090092B /* FBLogin@2x.png */; };
+		31BC4B821A4B117F0090092B /* FBShare.png in Resources */ = {isa = PBXBuildFile; fileRef = 31BC4B7E1A4B117F0090092B /* FBShare.png */; };
+		31BC4B831A4B117F0090092B /* FBShare@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31BC4B7F1A4B117F0090092B /* FBShare@2x.png */; };
 		79EE5784F172A1AA63D275BB /* libPods-Embriago.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6DBE0B98643657635B3709 /* libPods-Embriago.a */; };
 		F1E88A98DEE39DCC2C69CEE9 /* libPods-EmbriagoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 110F1A7BBD1EE218BB79C48E /* libPods-EmbriagoTests.a */; };
 /* End PBXBuildFile section */
@@ -62,6 +69,13 @@
 		31BC4B221A49C31E0090092B /* RAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAC.swift; sourceTree = "<group>"; };
 		31BC4B231A49C31E0090092B /* RACObserve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACObserve.swift; sourceTree = "<group>"; };
 		31BC4B731A4A1A640090092B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		31BC4B751A4AF1870090092B /* EmbriagoLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmbriagoLoginViewController.swift; sourceTree = "<group>"; };
+		31BC4B771A4AF1B10090092B /* EmbriagoSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmbriagoSignUpViewController.swift; sourceTree = "<group>"; };
+		31BC4B791A4AF4AD0090092B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		31BC4B7C1A4B117F0090092B /* FBLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FBLogin.png; sourceTree = "<group>"; };
+		31BC4B7D1A4B117F0090092B /* FBLogin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FBLogin@2x.png"; sourceTree = "<group>"; };
+		31BC4B7E1A4B117F0090092B /* FBShare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FBShare.png; sourceTree = "<group>"; };
+		31BC4B7F1A4B117F0090092B /* FBShare@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FBShare@2x.png"; sourceTree = "<group>"; };
 		4983FB98B7D07DF816BC8404 /* Pods-EmbriagoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmbriagoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmbriagoTests/Pods-EmbriagoTests.release.xcconfig"; sourceTree = "<group>"; };
 		8032323CFCC7244ACE85159B /* Pods-Embriago.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Embriago.release.xcconfig"; path = "Pods/Target Support Files/Pods-Embriago/Pods-Embriago.release.xcconfig"; sourceTree = "<group>"; };
 		AB6DBE0B98643657635B3709 /* libPods-Embriago.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Embriago.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +124,7 @@
 		3192B5AC1A48697A00F25F2C /* Embriago */ = {
 			isa = PBXGroup;
 			children = (
+				31BC4B7B1A4B11650090092B /* Resources */,
 				31BC4B271A49C35E0090092B /* views */,
 				3192B5AF1A48697A00F25F2C /* AppDelegate.swift */,
 				3192B5B61A48697A00F25F2C /* Main.storyboard */,
@@ -167,8 +182,22 @@
 				3192B5B41A48697A00F25F2C /* ViewController.swift */,
 				31BC4A1A1A48E6E90090092B /* LoginViewController.swift */,
 				31BC4B731A4A1A640090092B /* HomeViewController.swift */,
+				31BC4B751A4AF1870090092B /* EmbriagoLoginViewController.swift */,
+				31BC4B771A4AF1B10090092B /* EmbriagoSignUpViewController.swift */,
+				31BC4B791A4AF4AD0090092B /* MainViewController.swift */,
 			);
 			name = views;
+			sourceTree = "<group>";
+		};
+		31BC4B7B1A4B11650090092B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				31BC4B7C1A4B117F0090092B /* FBLogin.png */,
+				31BC4B7D1A4B117F0090092B /* FBLogin@2x.png */,
+				31BC4B7E1A4B117F0090092B /* FBShare.png */,
+				31BC4B7F1A4B117F0090092B /* FBShare@2x.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		63905D6635811EC3A9E3C17A /* Pods */ = {
@@ -277,9 +306,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31BC4B831A4B117F0090092B /* FBShare@2x.png in Resources */,
+				31BC4B811A4B117F0090092B /* FBLogin@2x.png in Resources */,
 				3192B5B81A48697A00F25F2C /* Main.storyboard in Resources */,
 				3192B5BD1A48697A00F25F2C /* LaunchScreen.xib in Resources */,
 				3192B5BA1A48697A00F25F2C /* Images.xcassets in Resources */,
+				31BC4B801A4B117F0090092B /* FBLogin.png in Resources */,
+				31BC4B821A4B117F0090092B /* FBShare.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,9 +395,12 @@
 			files = (
 				31BC4A1D1A48EC110090092B /* RegisterUserViewModel.swift in Sources */,
 				31BC4A1F1A48EC2C0090092B /* LoginUserViewModel.swift in Sources */,
+				31BC4B781A4AF1B10090092B /* EmbriagoSignUpViewController.swift in Sources */,
+				31BC4B761A4AF1870090092B /* EmbriagoLoginViewController.swift in Sources */,
 				31BC4A1B1A48E6E90090092B /* LoginViewController.swift in Sources */,
 				31BC4A211A48ECA20090092B /* BaseViewModel.swift in Sources */,
 				31BC4B241A49C31E0090092B /* RACSignal+Extensions.swift in Sources */,
+				31BC4B7A1A4AF4AD0090092B /* MainViewController.swift in Sources */,
 				31BC4B261A49C31E0090092B /* RACObserve.swift in Sources */,
 				3192B5B51A48697A00F25F2C /* ViewController.swift in Sources */,
 				31BC4B741A4A1A640090092B /* HomeViewController.swift in Sources */,

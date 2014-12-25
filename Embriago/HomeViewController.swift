@@ -16,7 +16,10 @@ class HomeViewController: UIViewController {
     
     @IBAction func logout(sender: AnyObject) {
         PFUser.logOut()
-        performSegueWithIdentifier("gotoLogin", sender: self)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewControllerWithIdentifier("LoginViewController") as UIViewController
+        self.presentViewController(viewController, animated: true, completion: nil)
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -24,6 +27,10 @@ class HomeViewController: UIViewController {
     }
     
     private func bind() {
-        
+        println("Bind")
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        println("viewDidAppear")
     }
 }

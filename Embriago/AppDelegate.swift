@@ -37,6 +37,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         PFFacebookUtils.initializeFacebook()
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+//        http://stackoverflow.com/questions/24316966/how-to-set-the-rootviewcontroller-with-swift-ios-7
+//        http://stackoverflow.com/questions/15770362/how-to-implement-an-ios-login-screen-that-only-appears-for-unauthenticated-users
+//        if PFUser.currentUser() != nil {
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let rootViewController = storyboard.instantiateViewControllerWithIdentifier("HomeViewController") as UIViewController
+//            if let window = self.window {
+//                window.rootViewController = rootViewController
+//            }
+//        }
+        
+    
         return true
     }
 

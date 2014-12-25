@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, FBLoginViewDelegate {
     
     @IBOutlet weak var emailAddressTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
@@ -16,9 +16,12 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var registerUserButton: UIButton!
     
+    @IBOutlet weak var loginView: FBLoginView!
+    
     @IBOutlet weak var messagesLabel: UILabel!
     
     let viewModel: BaseViewModel
+    
     
     required init(coder: NSCoder) {
         viewModel = RegisterUserViewModel()
@@ -42,6 +45,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginView.delegate = self
         println(PFUser.currentUser())
 //        var testObject = PFObject(className: "TestObject")
 //        testObject["Name"] = "TestObject Name"
@@ -59,7 +63,7 @@ class ViewController: UIViewController {
 //        self.view.addSubview(loginView)
         
         bind()
-        
+                
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -177,11 +181,15 @@ class ViewController: UIViewController {
         user.password = password
         user.email = emailAddress
         user.setObject(name, forKey: "displayName")
+//        same as
+//        user["displayName"] = name
         
         user.signUpInBackgroundWithBlock {
             (succeeded: Bool!, error: NSError!) -> Void in
             if error == nil {
-                self.performSegueWithIdentifier("goHome", sender: self)
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let homeViewController = storyboard.instantiateViewControllerWithIdentifier("HomeViewController") as UIViewController
+                self.presentViewController(homeViewController, animated: true, completion: nil)
             } else {
                 var alertView = SCLAlertView();
                 alertView.alertIsDismissed({ () -> Void in
@@ -196,6 +204,25 @@ class ViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    func loginView(loginView: FBLoginView!, handleError error: NSError!) {
+        println(error)
+    }
+    
+    func loginViewFetchedUserInfo(loginView: FBLoginView!, user: FBGraphUser!) {
+        println(user)
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let homeViewController = storyboard.instantiateViewControllerWithIdentifier("HomeViewController") as UIViewController
+//        self.presentViewController(homeViewController, animated: true, completion: nil)
+    }
+    
+    func loginViewShowingLoggedInUser(loginView: FBLoginView!) {
+        println("loginViewShowingLoggedInUser")
+    }
+    
+    func loginViewShowingLoggedOutUser(loginView: FBLoginView!) {
+        println("loginViewShowingLoggedOutUser")
     }
     
     func isValidPassword(password: String) -> Bool {

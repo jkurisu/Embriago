@@ -10,6 +10,7 @@ target "Embriago" do
   pod 'Parse'
   pod 'ParseFacebookUtils'
   pod 'ParseUI'
+  pod 'QuickBlox'
   pod 'NSLogger'
 #  pod 'SCLAlertView'
   pod 'SCLAlertView-Objective-C'
